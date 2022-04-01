@@ -1,0 +1,198 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+.dropdown {
+    position:relative;
+    display:inline-block;
+    width:100%;
+    text-align:center;
+}
+.dropdownLayout{
+    display:flex;
+    justify-content:space-around;
+    background:rgb(15, 46, 77);
+    color: #FFF;
+    font-size:18px;
+    font-weight:900;
+    padding: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left:0;
+    min-width:100%;
+    background:rgb(15, 46, 77);
+    color: #FFF;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px;
+    z-index: 1;
+}
+.dropdown-content {
+    div {
+       padding: 5px; 
+    }
+}
+.dropdown:hover {
+    .dropdown-content {
+        display: block;
+    }
+}
+.dropdown:hover, .dropdown-content div:hover {
+    background-color:#9933ff;
+    cursor: pointer;
+}
+.gameList {
+    p {
+        margin-bottom: 10px;
+    }
+}
+img.avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+img.profileAvatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+@media (min-width: 576px) { 
+    img.profileAvatar {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+.rule {
+    div {
+        margin-bottom: 40px;
+    }
+}
+.logo {
+    max-height: 100px;
+}
+@media (min-width: 576px) { 
+    .logo {
+        max-height: 150px;
+    }
+}
+.clickable-row {
+    cursor: pointer;
+}
+.sigupListTable {
+    td {
+        white-space: nowrap;
+    }
+}
+.sigupList {
+    display: flex;
+    align-items: center;
+    .userInfo {
+        margin-left: 10px;
+        white-space: nowrap;
+        p {
+            margin: 0;
+        }
+    }
+}
+.table-responsive {
+    table td, table th {
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+}
+.rank {
+    width: 70px;
+    text-align: center;
+    img {
+        max-width: 100%;
+    }
+}
+.ruleList {
+    li {
+        list-style: decimal;
+    }
+}
+.userLists {
+    @media (min-width: 992px) {
+      > div:nth-child(even) {
+        border-left: 0.5px solid #343a40;
+      }
+    }
+    .secondHeader {
+      display: none;
+    }
+    img.avatar {
+        width: 30px;
+        height: 30px;
+    }
+    @media (min-width: 576px) {
+        img.avatar {
+            width: 50px;
+            height: 50px;
+        }
+      }
+    @media (min-width: 992px) {
+      .secondHeader {
+        display: block;
+      }
+    }
+    
+    .userCard {
+      > div {
+        padding: 0 5px;
+      }
+      &.header {
+        padding-bottom: 10px;
+        border-bottom: 0.5px solid #343a40;
+      }
+  
+      border-bottom: 0.5px solid #343a40;
+      padding: 5px 0px;
+
+      justify-content: center;
+      align-items: center;
+      .nums {
+        display: flex;
+        align-items: center;
+        h3 {
+          margin: 0;
+        }
+      }
+      .user {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        a {
+            vertical-align: middle;
+        }
+      }
+      .resultContainer {
+        display: flex;
+        > div {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          > div {
+            flex: 1;
+          }
+        }
+      }
+    }
+    @media (min-width: 992px) {
+        .userCard {
+          padding: 5px 10px;  
+        }
+    }
+  }
